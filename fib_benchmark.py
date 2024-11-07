@@ -1,10 +1,12 @@
 import time
 
+#Recursively calculate the nth Fibonacci Number
 def fibonacci(n):
     if n <= 1:
         return n
     return fibonacci(n - 1) + fibonacci(n - 2)
 
+#Perform the Fibonacci calculation a desired number of times
 def fib_iterations(iterations, n):
     sum = 0
     for i in range(iterations):
